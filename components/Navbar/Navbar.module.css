@@ -1,0 +1,38 @@
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  border-top: 1px solid #2a2a2a;
+  background: #050505;
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+}
+
+.menuItem {
+  flex: 1;
+}
+
+.menuLink {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.menuLink:hover,
+.menuLink:focus-visible,
+.menuLink:active {
+  opacity: 1;
+  text-decoration: none;
+}
